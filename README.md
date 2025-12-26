@@ -22,7 +22,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  flutter_hijri_rrule: ^1.0.0
+  flutter_hijri_rrule: ^1.0.2
 ```
 
 Then run:
