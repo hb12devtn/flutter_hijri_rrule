@@ -11,7 +11,7 @@ import 'hijri_rrule.dart';
 /// final ruleSet = HijriRRuleSet();
 ///
 /// // Add a rule for 1st of every month
-/// ruleSet.rrule(HijriRRule(PartialOptions(
+/// ruleSet.rrule(HijriRRule(HijriRRulePartialOptions(
 ///   freq: Frequency.monthly,
 ///   bymonthday: [1],
 ///   dtstart: HijriDate(1446, 1, 1)

@@ -37,7 +37,7 @@ flutter pub get
 import 'package:flutter_hijri_rrule/flutter_hijri_rrule.dart';
 
 // Create a yearly recurrence for the 1st of Ramadan
-final ramadanRule = HijriRRule(PartialOptions(
+final ramadanRule = HijriRRule(HijriRRulePartialOptions(
   freq: Frequency.yearly,
   bymonth: [HijriMonth.ramadan],
   bymonthday: [1],
@@ -60,7 +60,7 @@ print(ramadanRule.toText('ar')); // "كل سنة في 1 رمضان"
 ### Weekly Recurrence (Every Friday)
 
 ```dart
-final fridayRule = HijriRRule(PartialOptions(
+final fridayRule = HijriRRule(HijriRRulePartialOptions(
   freq: Frequency.weekly,
   byweekday: [HijriWeekday.fr],
   dtstart: HijriDate(1446, 1, 1),
@@ -76,7 +76,7 @@ for (final date in fridayRule.all()) {
 ### Monthly Recurrence (First Friday of Each Month)
 
 ```dart
-final firstFridayRule = HijriRRule(PartialOptions(
+final firstFridayRule = HijriRRule(HijriRRulePartialOptions(
   freq: Frequency.monthly,
   byweekday: [HijriWeekday.fr.nth(1)], // 1st Friday
   dtstart: HijriDate(1446, 1, 1),
@@ -101,7 +101,7 @@ print(parsed.toString()); // Back to RRULE string
 final ruleSet = HijriRRuleSet();
 
 // Add a rule for 1st of every month
-ruleSet.rrule(HijriRRule(PartialOptions(
+ruleSet.rrule(HijriRRule(HijriRRulePartialOptions(
   freq: Frequency.monthly,
   bymonthday: [1],
   dtstart: HijriDate(1446, 1, 1),
@@ -122,7 +122,7 @@ for (final date in ruleSet.allHijri()) {
 ### Query Operations
 
 ```dart
-final rule = HijriRRule(PartialOptions(
+final rule = HijriRRule(HijriRRulePartialOptions(
   freq: Frequency.monthly,
   bymonthday: [1, 15],
   dtstart: HijriDate(1446, 1, 1),

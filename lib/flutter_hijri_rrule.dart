@@ -10,7 +10,7 @@
 /// import 'package:flutter_hijri_rrule/flutter_hijri_rrule.dart';
 ///
 /// // Create a rule for the 1st of Ramadan every year
-/// final rule = HijriRRule(PartialOptions(
+/// final rule = HijriRRule(HijriRRulePartialOptions(
 ///   freq: Frequency.yearly,
 ///   bymonth: [HijriMonth.ramadan],
 ///   bymonthday: [1],

@@ -68,7 +68,7 @@ String optionsToString(dynamic options, {bool includeDtstart = true}) {
     rruleParts.add('UNTIL=${hijriUntil.toRRuleString()}');
   }
 
-  // Handle ParsedOptions specific fields
+  // Handle HijriRRuleParsedOptions specific fields
   if (options is HijriRRuleParsedOptions) {
     // BYSETPOS
     final bysetpos = options.bysetpos;
@@ -135,7 +135,7 @@ String optionsToString(dynamic options, {bool includeDtstart = true}) {
       rruleParts.add('SKIP=${skip.value.toUpperCase()}');
     }
   } else if (options is HijriRRulePartialOptions) {
-    // Handle PartialOptions
+    // Handle HijriRRulePartialOptions
     final bysetpos = options.bysetpos;
     if (bysetpos != null && bysetpos.isNotEmpty) {
       rruleParts.add('BYSETPOS=${bysetpos.join(',')}');

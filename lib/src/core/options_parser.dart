@@ -245,7 +245,7 @@ HijriRRuleParsedOptions parseOptions(HijriRRulePartialOptions options) {
   );
 }
 
-/// Convert ParsedOptions back to PartialOptions
+/// Convert HijriRRuleParsedOptions back to HijriRRulePartialOptions
 /// Useful for cloning rules
 HijriRRulePartialOptions optionsToPartial(HijriRRuleParsedOptions parsed) {
   // Combine positive and negative monthdays

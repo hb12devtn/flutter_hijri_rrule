@@ -21,7 +21,7 @@ typedef IteratorCallback = bool? Function(DateTime date, int index);
 ///
 /// Example:
 /// ```dart
-/// final rule = HijriRRule(PartialOptions(
+/// final rule = HijriRRule(HijriRRulePartialOptions(
 ///   freq: Frequency.yearly,
 ///   bymonth: [9],  // Ramadan
 ///   bymonthday: [1],
