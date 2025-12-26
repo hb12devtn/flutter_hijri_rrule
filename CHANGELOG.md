@@ -1,3 +1,8 @@
+## 1.0.1
+
+- Added GitHub Actions CI/CD workflows
+- Documentation improvements
+
 ## 1.0.0
 
 Initial release of flutter_hijri_rrule.
