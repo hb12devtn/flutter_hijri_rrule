@@ -1,0 +1,29 @@
+name: flutter_hijri_rrule
+description: A comprehensive RFC 5545 recurrence rule library for the Hijri (Islamic) calendar. Supports Umm al-Qura and Tabular Islamic calendars.
+version: 1.0.0
+homepage: https://github.com/hb12devtn/flutter_hijri_rrule
+repository: https://github.com/hb12devtn/flutter_hijri_rrule
+issue_tracker: https://github.com/hb12devtn/flutter_hijri_rrule/issues
+
+topics:
+  - hijri
+  - islamic-calendar
+  - rrule
+  - recurrence
+  - calendar
+
+environment:
+  sdk: ^3.0.0
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+
